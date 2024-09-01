@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastAPI with Tailwind CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold mb-4">Welcome to FastAPI with Tailwind CSS</h1>
+        <p class="text-gray-700 mb-4">This form includes 5 different input types.</p>
+        
+        <form class="space-y-4">
+            <div class="mb-6">
+                <label for="text-input" class="block text-lg font-semibold text-indigo-600 mb-2">Text Input</label>
+                <input type="text" id="text-input" name="text-input" class="w-full px-4 py-2 rounded-lg border-2 border-indigo-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 transition duration-200 ease-in-out">
+            </div>
+
+            <div class="mb-6">
+                <label for="email-input" class="block text-lg font-semibold text-green-600 mb-2">Email Input</label>
+                <input type="email" id="email-input" name="email-input" class="w-full px-4 py-2 rounded-lg border-2 border-green-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 transition duration-200 ease-in-out">
+            </div>
+
+            <div class="mb-6">
+                <label for="number-input" class="block text-lg font-semibold text-purple-600 mb-2">Number Input</label>
+                <input type="number" id="number-input" name="number-input" class="w-full px-4 py-2 rounded-lg border-2 border-purple-300 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 transition duration-200 ease-in-out">
+            </div>
+
+            <div class="mb-6">
+                <label for="date-input" class="block text-lg font-semibold text-pink-600 mb-2">Date Input</label>
+                <input type="date" id="date-input" name="date-input" class="w-full px-4 py-2 rounded-lg border-2 border-pink-300 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 transition duration-200 ease-in-out">
+            </div>
+
+            <div>
+                <label for="select-input" class="block text-sm font-medium text-gray-700">Select Input</label>
+                <select id="select-input" name="select-input" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                    <option>Select 1</option>
+                    <option>Select 2</option>
+                    <option>Select 3</option>
+                </select>
+            </div>
+
+            <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                Submit
+            </button>
+        </form>
+    </div>
+</body>
+</html>
